@@ -5,9 +5,7 @@ import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
-import { FlipWords } from "./ui/flip-words";
 import { ArrowRight, Link, Mail, Github, Linkedin } from "lucide-react";
-import AnimatedShinyText from "./ui/animated-shiny-text";
 import Lottie from "lottie-react";
 import modernCharacterAnimation from "../../public/animation/modern-character.json.json";
 
@@ -67,12 +65,11 @@ export default function Hero() {
         <motion.div className="max-w-4xl mx-auto">
           <motion.div className="space-y-8">
             <div className="space-y-4">
-              <h1 className="hero-title text-3xl md:text-4xl lg:text-6xl font-bold text-accent">
+              <h1 className="hero-title text-3xl md:text-4xl lg:text-6xl font-bold text-gray-100">
                 Hi, I&apos;m{' '}
-                <AnimatedShinyText
-                  text="Kahan Chauhan"
-                  className="text-accent"
-                />
+                <span className="text-emerald-500">
+                  Kahan Chauhan
+                </span>
               </h1>
               <div className="text-xl md:text-2xl lg:text-3xl text-highlight font-semibold mt-2">
                 Full-Stack Developer | Python · Django · React · AI Enthusiast
